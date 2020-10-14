@@ -3,7 +3,7 @@
 
     <application
         android:name=".FeatureMainApplication"
-        android:theme="@style/Theme.AppCompat.Light">
+        android:theme="@style/Main.Theme">
         <activity android:name=".FeatureMainActivity" />
     </application>
 </manifest>

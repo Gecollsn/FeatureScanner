@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/item1"
+            android:title="选项1">
+            <menu>
+                <item
+                    android:id="@+id/sub_item1"
+                    android:title="子菜单1" />
+                <item
+                    android:id="@+id/sub_item2"
+                    android:title="子菜单2" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/item2"
+            android:title="选项2" />
+
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/item3"
+            android:title="选项3">
+
+        </item>
+
+        <item
+            android:id="@+id/item4"
+            android:title="选项4" />
+
+    </group>
+</menu>

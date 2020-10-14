@@ -1,5 +1,6 @@
 import com.gcc.feature.build_src.ProjectManager
 import com.gcc.feature.build_src.config.AppInfo
+import com.gcc.feature.build_src.config.Deps
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
@@ -15,6 +16,8 @@ android {
         targetSdkVersion AppInfo.targetSdkVersion
         versionCode AppInfo.versionCode
         versionName AppInfo.versionName
+
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,6 +40,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation Deps.android.multidex
 
     rootProject.subprojects {
         sub ->

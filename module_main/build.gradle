@@ -1,3 +1,17 @@
 import com.gcc.feature.build_src.Functions
+import com.gcc.feature.build_src.config.Deps
 
 Functions.applyLibrary(project)
+
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+dependencies {
+    implementation Deps.ui.material
+    implementation Deps.ui.navigation_fragment
+    implementation Deps.ui.navigation_fragment_ktx
+    implementation Deps.ui.navigation_fragment_feature
+    implementation Deps.ui.navigation_ui
+    implementation Deps.ui.navigation_ui_ktx
+
+    androidTestImplementation Deps.test.navigation
+}
